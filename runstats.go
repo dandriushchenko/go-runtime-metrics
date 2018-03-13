@@ -116,7 +116,7 @@ func RunCollector(config *Config) (err error) {
 
 	// Make client
 	clnt, err := client.NewHTTPClient(client.HTTPConfig{
-		Addr:     "http://" + config.Host,
+		Addr:     config.Host,
 		Username: config.Username,
 		Password: config.Password,
 	})
